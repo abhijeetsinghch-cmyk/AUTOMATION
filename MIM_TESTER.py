@@ -21,10 +21,10 @@ LOGO_B64 = "UklGRgzAAABXRUJQVlA4TADAAAAv/8Q/Ed/BKJIkRb38XP8CVtXxj5mxbbBtJElR30P+
 # THEME STATE
 # =====================================================
 if "theme" not in st.session_state:
-    st.session_state.theme = "light"
+    st.session_state.theme = "dark"
 
 def toggle_theme():
-    st.session_state.theme = "dark" if st.session_state.theme == "light" else "light"
+    st.session_state.theme = "dark" if st.session_state.theme == "dark" else "light"
 
 IS_DARK = st.session_state.theme == "dark"
 
@@ -437,15 +437,15 @@ with nav_left:
     <div style="margin-bottom:20px;"></div>
     """, unsafe_allow_html=True)
 
-# Theme toggle — floated right via a small column trick
-with nav_right:
-    st.markdown("""<div style="margin-top:14px; display:flex; justify-content:flex-end;">""",
-                unsafe_allow_html=True)
-    st.markdown('<div class="theme-toggle-btn">', unsafe_allow_html=True)
-    toggle_label = "☀️ Light" if IS_DARK else "🌙 Dark"
-    if st.button(toggle_label, key="theme_toggle", on_click=toggle_theme):
-        pass
-    st.markdown("</div></div>", unsafe_allow_html=True)
+# # Theme toggle — floated right via a small column trick
+# with nav_right:
+#     st.markdown("""<div style="margin-top:14px; display:flex; justify-content:flex-end;">""",
+#                 unsafe_allow_html=True)
+#     st.markdown('<div class="theme-toggle-btn">', unsafe_allow_html=True)
+#     toggle_label = "☀️ Light" if IS_DARK else "🌙 Dark"
+#     if st.button(toggle_label, key="theme_toggle", on_click=toggle_theme):
+#         pass
+#     st.markdown("</div></div>", unsafe_allow_html=True)
 
 # =====================================================
 # LAYOUT
