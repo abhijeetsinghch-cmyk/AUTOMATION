@@ -396,7 +396,7 @@ st.markdown(f"""
          src="data:image/webp;base64,{LOGO_B64}"
          alt="Instamart logo">
     <div class="im-navbar-title">
-      MIM File Checker
+      MIM Checker
       <span class="im-navbar-sub">Invoice Split Engine</span>
     </div>
   </div>
