@@ -64,7 +64,7 @@ THEME_VARS = DARK_VARS
 # PAGE CONFIG
 # =====================================================
 st.set_page_config(
-    page_title="Instamart",
+    page_title="Instamart-MIM Checker",
     page_icon="ICON.png",
     layout="wide",
     initial_sidebar_state="collapsed",
