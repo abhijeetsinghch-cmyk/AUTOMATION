@@ -64,7 +64,7 @@ THEME_VARS = DARK_VARS
 # PAGE CONFIG
 # =====================================================
 st.set_page_config(
-    page_title="Instamart-MIM Checker",
+    page_title="Invoice-Checker",
     page_icon="ICON.png",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -396,7 +396,7 @@ st.markdown(f"""
          src="data:image/webp;base64,{LOGO_B64}"
          alt="Instamart logo">
     <div class="im-navbar-title">
-      MIM Checker
+      Invoice Checker
       <span class="im-navbar-sub">Invoice Split Engine</span>
     </div>
   </div>
